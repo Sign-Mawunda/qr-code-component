@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-white: hsl(0, 0%, 100%);
+      --color-slate-300: hsl(212, 45%, 89%);
+      --color-slate-500: hsl(216, 15%, 48%);
+      --color-slate-900: hsl(218, 44%, 22%);
+    }
+
+    body {
+      font-family: "Outfit", sans-serif;
+      font-size: 15px;
+      background-color: var(--color-slate-300);
+      display: flex;
+      flex-direction: column; /* Allows vertical stacking */
+      align-items: center;
+      justify-content: center; /* Centers the container */
+      min-height: 100vh;
+      padding-bottom: 1rem; /* Optional: adds some space at the bottom */
+    }
+
+    .container {
+      background-color: var(--color-white);
+      padding: 1.5rem;
+      border-radius: 0.625rem;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      max-width: 300px;
+      margin-bottom: 2rem; /* Allows space between the container and the attribution */
+    }
+    .container img{
+      border-radius: 0.625rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0.5rem 0; /* Adjust margin for the heading */
+    }
+    
+    .container h1{
+      color: var(--dark-blue);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0 1rem; /* Adjust bottom margin for the paragraph */
+    }
+
+    .container p{
+      color: var(--grayish-blue);
+      text-align: center;
+    }
+
+    .attribution {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 0.5rem; /* Reduced margin to bring it closer to the container */
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    @media (min-width: 500px) {
+      .container{
+        width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="./images/image-qr-code.png" alt="QR code to Frontend Mentor">
+    <h1>
+      Improve your front-end skills by building projects
+    </h1>
+    <p>
+      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </p>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Sign-Mawunda/qr-code-component.git">Sign Mawunda</a
